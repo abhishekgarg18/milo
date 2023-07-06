@@ -34,16 +34,15 @@ function decorateImage(block) {
 
 function decorateContent(block) {
   if (!block) return;
-  /*
   const card = block.querySelector('h1, h2, h3, h4, h5, h6')?.closest('div');
   card?.classList.add('card-block');
   const content = createTag('div', { class: 'card-content' });
-  const elems = card?.querySelectorAll('h1, h2, h3, h4, h5, h6, p');
-  content.append(...elems);
+  // const elems = card?.querySelectorAll('h1, h2, h3, h4, h5, h6, p');
+  // content.append(...elems);
   card.append(content);
-  const headings = content?.querySelectorAll('h1, h2, h3, h4, h5, h6');
-  const heading = headings?.[headings.length - 1];
-  heading?.classList?.add('heading-xs');
+  // const headings = content?.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  // const heading = headings?.[headings.length - 1];
+  // heading?.classList?.add('heading-xs');
   const paragraphs = content.querySelectorAll(':scope > p');
   paragraphs.forEach((item) => item.classList.add('body-xs'));
   const image = decorateImage(block);
@@ -55,7 +54,6 @@ function decorateContent(block) {
     a.addEventListener('focus', () => card.classList.add('card-block-focus'));
     a.addEventListener('blur', () => card.classList.remove('card-block-focus'));
   }
-  %/
 }
 
 export default function init(el) {
