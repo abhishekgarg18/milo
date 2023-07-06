@@ -34,6 +34,7 @@ function decorateImage(block) {
 
 function decorateContent(block) {
   if (!block) return;
+  /*
   const card = block.querySelector('h1, h2, h3, h4, h5, h6')?.closest('div');
   card?.classList.add('card-block');
   const content = createTag('div', { class: 'card-content' });
@@ -54,6 +55,7 @@ function decorateContent(block) {
     a.addEventListener('focus', () => card.classList.add('card-block-focus'));
     a.addEventListener('blur', () => card.classList.remove('card-block-focus'));
   }
+  %/
 }
 
 export default function init(el) {
